@@ -1,0 +1,15 @@
+@media (min-width: 1500px) {
+    .custom-container{
+        max-width: 80%;
+    }
+}
+
+@media (max-width : 992px) {
+    .company-info-block{
+        flex-direction: unset;
+        align-items: unset;
+    }
+    .company-info-block h3{
+        display: block;
+    }
+}

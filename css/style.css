@@ -151,7 +151,9 @@ h3{
     border-top: 1px solid #ccc;
     padding: 10px;
 }
-
+.card-list-bellow{
+    border-bottom: 1px solid #ccc;
+}
 .card{
     margin: 10px;
     transition: .3s;
@@ -301,4 +303,12 @@ footer{
 
 .bottom-border{
     border-bottom: 1px solid #ccc;
+}
+
+.main-register-container{
+    background-color: #fff;
+}
+.height {
+    height: 60px !important;
+
 }

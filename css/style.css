@@ -44,7 +44,7 @@ h5 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0px;   
+    margin: 5px 0px;   
 }
 
 .right i{
@@ -61,6 +61,12 @@ h5 {
     height: 100%;
     margin: 0 10px;
     position: relative;
+}
+
+.register-btn{
+    background-color: #247f9e;
+    color: #fff;
+    font-weight: bold;
 }
 
 .custom-drop-down{
@@ -163,7 +169,7 @@ h3{
     -webkit-box-shadow: 0px 3px 17px -9px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 3px 17px -9px rgba(0,0,0,0.75);
     box-shadow: 0px 3px 17px -9px rgba(0,0,0,0.75);
-    top: -5px;
+    /* top: -5px; */
 }
 
 .card-img{
@@ -179,10 +185,19 @@ h3{
 
 .card-body{
     padding: 5px;
+    color: #000;
+}
+
+.star-active{
+    color: #B9121B;
+}
+
+.star-deactive{
+    color: #ccc;
 }
 
 .card-body p{
-    margin-bottom: 2px;
+    margin-bottom: 7px;
 }
 
 .card a{
@@ -307,8 +322,52 @@ footer{
 
 .main-register-container{
     background-color: #fff;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 20px;
 }
 .height {
     height: 60px !important;
 
+}
+
+.fa-facebook-f,
+.fa-google-plus-g{
+    font-size: 22px;
+    color: blue;
+    border: 1px solid;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.fa-google-plus-g{
+    color: #B9121B;
+}
+.btn-social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-profile-img img{
+    width: 100%;
+    height: 75%;
+}
+
+.company-profile-img{
+    display: flex;
+    align-items: center;
+}
+
+.company-item .name{
+    padding: 0;
+}
+
+.company-item p{
+    margin: 0;
+}
+
+.page-link{
+    border-radius: 50% !important;
+    margin: 0px 5px;
+    color: #B9121B;
 }

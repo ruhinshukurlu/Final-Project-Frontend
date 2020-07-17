@@ -1,10 +1,4 @@
-h5 {
-    display: inline-block;
-    padding: 10px;
-    background: #B9121B;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
+
   
   .full-screen {
     background-size: cover;
@@ -371,3 +365,106 @@ footer{
     margin: 0px 5px;
     color: #B9121B;
 }
+
+.link-box{
+    width: 300px;
+    height: 190px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.company-admin-container a:hover{
+    text-decoration: none;
+}
+
+.link-box i{
+    font-size: 32px;
+}
+
+.link-box span{
+    font-size: 20px;
+}
+
+#company-admin-body{
+    background-color: #E9F4FA;
+}
+.color-w{
+    color: white !important;
+}
+
+.company-admin-container .col img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.add-img-form{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+ .save-btn,
+ .delete-btn{
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 10px;
+    background-color: #28AB0E;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.delete-btn{
+    background-color: #B9121B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select-img-type{
+    width: 250px;
+    background-color: #2AFAFD;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+#upload-img {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+ }
+
+ .add-img-label{
+    width: 250px;
+    margin: 0 10px;
+    background-color: #2AFAFD ;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+ }
+
+ .menu-form label{
+    font-weight: bold;
+ }
+
+ .company-menu-block .menu-item{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 7px;
+    margin-bottom: 15px;
+ }
+
+ .company-admin-container .comment-item{
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding-top: 10px;
+ }

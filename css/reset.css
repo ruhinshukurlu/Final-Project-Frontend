@@ -59,6 +59,10 @@ ol li{
 	float: left;
 }
 
+.float-r  {
+	float: right;
+}
+
 .flex-direction-column{
 	flex-direction: column;
 }

@@ -426,6 +426,10 @@ footer{
     align-items: center;
 }
 
+.delete-btn:hover{
+    color: #fff;
+}
+
 .select-img-type{
     width: 250px;
     background-color: #2AFAFD;
@@ -456,7 +460,8 @@ footer{
     font-weight: bold;
  }
 
- .company-menu-block .menu-item{
+ .company-menu-block .menu-item,
+ .reservation-detail-block .menu-item{
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 7px;
@@ -467,4 +472,25 @@ footer{
     border: 1px solid #ccc;
     border-radius: 20px;
     padding-top: 10px;
+ }
+
+ .portion-count{
+    position: absolute;
+    right: 18px;
+    top: -21px;
+    background-color: #54FD2A ;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    font-weight: bold;
+ }
+
+ .reservation-detail-block .menu-price{
+    margin-right: 80px;
+ }
+
+ .reservation-detail-block .menu-items{
+     margin-top: 55px;
  }

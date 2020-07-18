@@ -95,13 +95,16 @@
     flex-direction: column;
 }
 
-.comment-author{
+.comment-author,
+.reserve-author{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-.comment-author-profile-img{
+.comment-author-profile-img,
+.reserve-author-profile-img{
     width: 60px;
     height: 60px;
     display: flex;

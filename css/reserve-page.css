@@ -106,12 +106,14 @@
     position: absolute;
     display: none; 
     right: 5px;
-    top: -7px;
+    top: -17px;
     transition: all .5s ease-in;
 }
 .saved-item-icon{
     font-size: 25px;
-    color: green;
+    color: #42FF00;
+    background-color: white;
+    font-size: 30px;
 }
 .choosen-menu-list{
     display: flex;

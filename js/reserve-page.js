@@ -16,7 +16,7 @@ $('.menu-items-style').click(function(){
         count += 1
         
        $(this).data('clicked', true);
-       $(this).css('border', '1px solid #008000')
+       $(this).css('border', '2px solid #42FF00')
        $(this).siblings('.menu-item-choose').css('display','block')
        $(this).addClass(`item${count}`)
        choosen_item = $('<div></div>') 

@@ -3,7 +3,6 @@
         max-width: 80%;
     }
 }
-
 @media (max-width : 992px) {
     .company-info-block{
         flex-direction: unset;
@@ -11,5 +10,25 @@
     }
     .company-info-block h3{
         display: block;
+    }
+    .date-time-size-container{
+        flex-direction: column;
+    }
+    .custom-padding{
+        padding: 0 5px !important;
+    }
+    .reserve-header{
+        top: 20%;
+    }
+}
+@media (max-width : 450px) {
+    .date-time-size-container{
+        font-size: 17px;
+    }
+    .date-time-container{
+        flex-direction: column;
+    }
+    .reserve-header{
+        top: 0;
     }
 }

@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/user-profile.css">
     <link rel="stylesheet" href="css/company-profile.css">
-    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/reserve-page.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/custom.css">
     <title>Reservation Page</title>
 </head>
@@ -75,25 +75,27 @@
                             <h2 class="reserve-header">Make a Reservation</h2>
                             <div class="reserve-options">
                                 
-                                    <div class="d-flex justify-content-center">
-                                        <div>
-                                            <label for="date">Date</label>
-                                            <input type="date" id="date" name="trip-start" value="2020-07-15" min="2020-07-15" max="2020-08-31">
+                                    <div class="d-flex date-time-size-container ">
+                                        <div class="col-12 col-lg-8 date-time-container">
+                                            <div class="col-lg-6 custom-padding">
+                                                <label for="date">Date</label>
+                                                <input type="date" id="date" name="trip-start" value="2020-07-15" min="2020-07-15" max="2020-08-31">
+                                            </div>
+                                            <div class="col-lg-6 custom-padding">
+                                                <label for="time">Time</label>
+                                                <select id="time" name="time">
+                                                    <option value="">11:30 AM</option>
+                                                    <option value="">12:00 AM</option>
+                                                    <option value="">11:30 AM</option>
+                                                    <option value="">11:30 AM</option>
+                                                    <option value="">11:30 AM</option>
+                                                    <option value="">11:30 AM</option>
+                                                    <option value="">11:30 AM</option>
+                                                    <option value="">11:30 AM</option>
+                                                </select>
+                                            </div>
                                         </div>
-                                        <div class="ml-3">
-                                            <label for="time">Time</label>
-                                            <select id="time" name="time">
-                                                <option value="">11:30 AM</option>
-                                                <option value="">12:00 AM</option>
-                                                <option value="">11:30 AM</option>
-                                                <option value="">11:30 AM</option>
-                                                <option value="">11:30 AM</option>
-                                                <option value="">11:30 AM</option>
-                                                <option value="">11:30 AM</option>
-                                                <option value="">11:30 AM</option>
-                                            </select>
-                                        </div>
-                                        <div class="ml-3">
+                                        <div class="col-12 col-lg-4">
                                             <label for="party-size" >Party Size</label>
                                             <select id="party-size" name="size">
                                                 <option value="1">For 1</option>
@@ -211,15 +213,28 @@
                 <div class="row">
                     <div class="col-lg-11 mx-auto">
                         <div class="table-images-container">
+                            <div class="col-6 col-lg-3 mb-4">
+                                <img src="images/city4.jpg" class="table-images" alt="">
+                            </div>
+                            <div class="col-6 col-lg-3 mb-4">
+                                <img src="images/city4.jpg" class="table-images" alt="">
+                            </div>
+                            <div class="col-6 col-lg-3 mb-4">
+                                <img src="images/city4.jpg" class="table-images" alt="">
+                            </div>
+                            <div class=" col-6 col-lg-3 mb-4">
+                                <img src="images/city4.jpg" class="table-images" alt="">
+                            </div>
+                            <div class="col-6 col-lg-3 mb-4">
+                                <img src="images/city4.jpg" class="table-images" alt="">
+                            </div>
+                            <div class="col-6 col-lg-3 mb-4">
+                                <img src="images/city4.jpg" class="table-images" alt="">
+                            </div>
+                            <div class="col-6 col-lg-3 mb-4">
+                                <img src="images/city4.jpg" class="table-images" alt="">
+                            </div>
                             
-                            <img src="images/city4.jpg" class="table-images" alt="">
-                            <img src="images/city4.jpg" class="table-images" alt="">
-                            <img src="images/city4.jpg" class="table-images" alt="">
-                            <img src="images/city4.jpg" class="table-images" alt="">
-                            <img src="images/city4.jpg" class="table-images" alt="">
-                            <img src="images/city4.jpg" class="table-images" alt="">
-                            <img src="images/city4.jpg" class="table-images" alt="">
-                           
                         </div>
                     </div>
                 </div>

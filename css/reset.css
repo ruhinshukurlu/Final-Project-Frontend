@@ -77,6 +77,11 @@ ol li{
 	flex-direction: row;
 }
 
+.align-flex-end{
+	display: flex;
+	align-items: flex-end;
+}
+
 .margin{
 	margin: 15px;
 }

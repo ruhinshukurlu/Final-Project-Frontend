@@ -13,6 +13,15 @@
     <link rel="stylesheet" href="css/user-profile.css">
     <link rel="stylesheet" href="css/company-profile.css">
     <link rel="stylesheet" href="css/responsive.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <link rel="stylesheet" href="jquery.justified.images.css">
+    <script src="jquery.justified.images.js"></script>
+
     <title>Company Profile</title>
 </head>
 <body id="profile-body">
@@ -195,12 +204,54 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="photo-gallery d-flex m-auto">
-                            <div class="col"><img src="images/img1.jpg" alt=""></div>
+                        <pre><code class="language-css">&lt;link rel="stylesheet" href="jquery.justified.images.css"&gt;
+                            &lt;script src="jquery.justified.images.js"&gt;&lt;/script&gt;</code></pre>
+                        <div>
+                            <ul class="image-container">
+                                <li>
+                                    <a data-fancybox="gallery" href="images/img1.jpg"><img src="images/img1.jpg"></a>
+                                </li>
+                                <li>
+                                    <a data-fancybox="gallery" href="images/img2.jpg"><img src="images/img2.jpg"></a>
+                                </li>
+                                <li>
+                                    <a data-fancybox="gallery" href="images/img3.jpg"><img src="images/img3.jpg"></a>
+                                </li>
+                                <li>
+                                    <a data-fancybox="gallery" href="images/img4.jpg"><img src="images/img4.jpg"></a>
+                                </li>
+                                <li>
+                                    <a data-fancybox="gallery" href="images/img5.jpg"><img src="images/img5.jpg"></a>
+                                </li>
+                                <li>
+                                    <a data-fancybox="gallery" href="images/img6.jpg"><img src="images/img6.jpg"></a>
+                                </li>
+                                <li>
+                                    <a data-fancybox="gallery" href="images/beach.jpg"><img src="images/beach.jpg"></a>
+                                </li>
+                                <li>
+                                    <a data-fancybox="gallery" href="images/city1.jpg"><img src="images/city1.jpg"></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!-- <div class="photo-gallery d-flex m-auto">
+                            <div class="col-3">
+                                <img src="images/img1.jpg" alt="">
+                                <img src="images/img3.jpg" alt="">
+                            </div>
+                            <div class="col-6">
+                                <img src="images/img3.jpg" alt="">
+                            </div>
+                            <div class="col-3">
+                                <img src="images/img4.jpg" alt="">
+                                <img src="images/img4.jpg" alt="">
+                            </div>
+                            <!-- <div class="col"><img src="images/img1.jpg" alt=""></div>
                             <div class="col"><img src="images/img3.jpg" alt=""></div>
                             <div class="col"><img src="images/img4.jpg" alt=""></div>
-                            <div class="col"><img src="images/img1.jpg" alt=""></div>
-                        </div>
+                            <div class="col"><img src="images/img1.jpg" alt=""></div> -->
+                        </div> -->
                     </div>
                     <div class="row menu-section" id="3">
                         <div class="menu-container mb-3 collapse-menu">
@@ -609,22 +660,22 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-        $(document).ready(function(){
-            $('.header-btn').click(function(){
-                $('.custom-drop-down').hide()
-                $(this).siblings('.custom-drop-down').slideToggle()
-            });
-
-            $('.show-menu-btn').click(function(){
-                $('.menu-container').toggleClass('collapse-menu')
-                
-                if ($(this).text() == 'Show full menu') {
-                    $(this).text('Collapse Menu')
-                }
-                else{
-                    $(this).text('Show full menu')
-                }
-            });
+       $('.image-container').empty().justifiedImages({
+            images : photos,
+            rowHeight: 200,
+            maxRowHeight: 400,
+            thumbnailPath: function(photo, width, height){
+                var purl = photo.url_s;
+                if( photo.url_n && (width > photo.width_s * 1.2 || height > photo.height_s * 1.2) ) purl = photo.url_n;
+                if( photo.url_m && (width > photo.width_n * 1.2 || height > photo.height_n * 1.2) ) purl = photo.url_m;
+                if( photo.url_z && (width > photo.width_m * 1.2 || height > photo.height_m * 1.2) ) purl = photo.url_z;
+                if( photo.url_l && (width > photo.width_z * 1.2 || height > photo.height_z * 1.2) ) purl = photo.url_l;
+                return purl;
+            },
+            getSize: function(photo){
+                return {width: photo.width_s, height: photo.height_s};
+            },
+            margin: 1
         });
     </script>
 </body>

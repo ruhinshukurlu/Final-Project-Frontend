@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Home Page</title>
 </head>
 <body>
@@ -23,13 +24,13 @@
                     </a>
                 </div>
                 <div class="right side">
-                    <a href="register-user.html" class="btn register-btn mr-2">Sign Up</a>
+                    <button type="button" class="btn register-btn mr-2" data-toggle="modal" data-target="#exampleModal">Sign Up</button>
                     <a href="login-user.html" class="btn login-btn bold">Sign In</a>
                     <div class="user-profile">
                         <button type="button" class="header-btn"> 
                             <i class="far fa-user"></i>
                         </button>
-                        <div class="custom-drop-down" style="display: none;">
+                        <div class="custom-drop-down shadow" style="display: none;">
                             <div class="triangle"></div>
                             <span>Hello, User</span>
                             <ul>
@@ -61,6 +62,29 @@
             </div>
         </div>
     </header>
+  
+    <section>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body d-column">
+                    <a href="register-user.html" class="btn register-btn mb-2">Sign Up for User</a>
+                    <a href="register-restaurant.html" class="btn register-btn">Sign Up for Company</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
 
     <section>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -105,10 +129,10 @@
         </div>
     </section>
 
-    <main class="home-main">
-        <div class="container main-container">
+    <main class="home-main pb-3">
+        <div class="container main-container shadow">
             <div class="row" style="margin-bottom: 50px;">
-                <h3>Recently viewed</h3>
+                <h3 class="full bold">Recently viewed</h3>
                 <div class="card-list d-flex">
                     <div class="card">
                        <a href="company-profile.html">
